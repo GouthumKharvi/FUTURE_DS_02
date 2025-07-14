@@ -138,7 +138,7 @@ Age 45–49 → Highest CTR (0.023%)
 Age 40–44 → Second Highest CTR (0.017%)
 
 
-###🧍‍♂️ Total Spent by Gender
+### 🧍‍♂️ Total Spent by Gender
 Type: Pie Chart
 
 Male: 87.51%
@@ -261,7 +261,7 @@ Data Interpretation for Business Insights
 ### 👤 Author
 Gouthum  Kharvi
 Aspiring Data Scientist | ML & AI Engineer | Power BI Developer | SQL Enthusiast
-LinkedIn | GitHub
+
 
 
 
