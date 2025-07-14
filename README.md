@@ -258,7 +258,10 @@ Data Interpretation for Business Insights
 
 
 
-
+### 👤 Author
+Gouthum  Kharvi
+Aspiring Data Scientist | ML & AI Engineer | Power BI Developer | SQL Enthusiast
+LinkedIn | GitHub
 
 
 
