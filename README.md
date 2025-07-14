@@ -54,6 +54,7 @@ This dataset was provided as part of an internship task and includes the followi
 
 ---
 
+
 ### 2️⃣ Data Modeling
 
 - Flat data model — single table (`CampaignData`)
@@ -62,6 +63,8 @@ This dataset was provided as part of an internship task and includes the followi
 - Optimized table columns by removing unused fields
 
 ---
+
+
 
 ## 🧠 DAX Measures (Full List)
 
@@ -75,6 +78,8 @@ Total Conversions = SUM('CampaignData'[total_conversion])
 Approved Conversions = SUM('CampaignData'[approved_conversion])
 ```
 
+
+
 ###  📌 Performance Ratios
 ```DAX
 
@@ -87,6 +92,8 @@ CPC = DIVIDE(SUM('CampaignData'[spent]), SUM('CampaignData'[clicks]))
 CPA = DIVIDE(SUM('CampaignData'[spent]), SUM('CampaignData'[approved_conversion]))
 ```
 
+
+
 ### 📌 Advanced Calculations
 ```DAX
 CTR by Age = CALCULATE(
@@ -94,6 +101,8 @@ CTR by Age = CALCULATE(
     ALLEXCEPT('CampaignData', 'CampaignData'[age])
 )
 ```
+
+
 
 ```DAX
 
@@ -111,6 +120,8 @@ Conversion Funnel = SUM('CampaignData'[total_conversion])
 Approved Funnel = SUM('CampaignData'[approved_conversion])
 ```
 
+
+
 📊 KPI Cards (Top Section of Dashboard)
 Each KPI is calculated using DAX and visualized using Power BI card visuals:
 
@@ -123,6 +134,7 @@ Each KPI is calculated using DAX and visualized using Power BI card visuals:
 | Total Impressions    | `SUM(impressions)`                   | 78.51 million total views       |
 | Total Conversions    | `SUM(total_conversion)`              | 1645 conversions tracked        |
 | Approved Conversions | `SUM(approved_conversion)`           | 585 final validated conversions |
+
 
 
 ### 📈 Visualizations & Charts
@@ -138,6 +150,7 @@ Age 45–49 → Highest CTR (0.023%)
 Age 40–44 → Second Highest CTR (0.017%)
 
 
+
 ### 🧍‍♂️ Total Spent by Gender
 Type: Pie Chart
 
@@ -146,6 +159,8 @@ Male: 87.51%
 Female: 12.49%
 
 Suggests budget skewed heavily toward male audience
+
+
 
 ### 📉 Impressions vs Clicks
 Type: Line Chart
@@ -159,6 +174,8 @@ Compares views (impressions) and engagements (clicks)
 ### Low Campaign:
 
 730K impressions, 104 clicks, only 3 approved conversions
+
+
 
 ### 📊 Campaign Performance vs CTR
 Type: Combo Chart (Column + Line)
@@ -184,6 +201,8 @@ Approved Conversions: 1K
 
 Shows performance drop-off across funnel
 
+
+
 ### 📦 Top Ads by Engagement
 Type: Tree Map
 
@@ -194,6 +213,8 @@ ad_id 952031: 8 clicks
 ad_id 952001: 2 clicks
 
 
+
+
 ### 🔎 Filters & Slicers Used
 Filter Type	Values Used
 Date Range	17–08–2017 to 30–08–2017
@@ -202,6 +223,8 @@ Age Groups	30–34, 35–39, 40–44, 45–49
 Gender	M, F
 Total Conversion Slider	0 to 60
 Spent Slider	0 to 639.94
+
+
 
 ### 📌 Final Campaign Insights
 Metric	Value
@@ -218,12 +241,14 @@ Clicks: 1831
 
 Approved Conversions: 97
 
+
 ### 📍 Low Campaign
 Impressions: 730K
 
 Clicks: 104
 
 Approved Conversions: 3
+
 
 
 ### 🧠 Recommendations for Next Campaign
