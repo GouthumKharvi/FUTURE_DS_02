@@ -36,7 +36,6 @@ This dataset was provided as part of an internship task and includes the followi
 | spent                | Amount of money spent on that ad (₹ removed)      |
 | total_conversion     | Total number of conversions tracked               |
 | approved_conversion  | Approved conversions after quality validation     |
-
 | interest1	           | Primary interest category targeted (available up to row 762 only) |
 | interest2	| Secondary interest category targeted (available up to row 762 only) |
 | interest3	| Tertiary interest category targeted (available up to row 762 only) |
