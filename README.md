@@ -73,10 +73,10 @@ Total Clicks = SUM('CampaignData'[clicks])
 Total Spent = SUM('CampaignData'[spent])
 Total Conversions = SUM('CampaignData'[total_conversion])
 Approved Conversions = SUM('CampaignData'[approved_conversion])
+```
 
-
-📌 Performance Ratios
-DAX
+###  📌 Performance Ratios
+```DAX
 
 CTR (%) = DIVIDE(SUM('CampaignData'[clicks]), SUM('CampaignData'[impressions])) * 100
 
@@ -85,32 +85,38 @@ ROI (%) = DIVIDE(SUM('CampaignData'[approved_conversion]), SUM('CampaignData'[sp
 CPC = DIVIDE(SUM('CampaignData'[spent]), SUM('CampaignData'[clicks]))
 
 CPA = DIVIDE(SUM('CampaignData'[spent]), SUM('CampaignData'[approved_conversion]))
+```
 
-
-📌 Advanced Calculations
+### 📌 Advanced Calculations
+```DAX
 CTR by Age = CALCULATE(
     DIVIDE(SUM('CampaignData'[clicks]), SUM('CampaignData'[impressions])) * 100,
     ALLEXCEPT('CampaignData', 'CampaignData'[age])
 )
+```
+
+```DAX
 
 CTR by Campaign = CALCULATE(
     DIVIDE(SUM('CampaignData'[clicks]), SUM('CampaignData'[impressions])) * 100,
     ALLEXCEPT('CampaignData', 'CampaignData'[campaign_id])
 )
+```
 
 
 📌 Funnel Metrics
+```DAX
 Clicks Funnel = SUM('CampaignData'[clicks])
 Conversion Funnel = SUM('CampaignData'[total_conversion])
 Approved Funnel = SUM('CampaignData'[approved_conversion])
-
+```
 
 📊 KPI Cards (Top Section of Dashboard)
 Each KPI is calculated using DAX and visualized using Power BI card visuals:
 
 | KPI                  | Formula                              | Insight                         |
 | -------------------- | ------------------------------------ | ------------------------------- |
-| Total Spent          | `SUM(spent)`                         | ₹20,000 budget used             |
+| Total Spent          | `SUM(spent)`                         | 20,000 budget used             |
 | ROI (%)              | `Approved Conversions / Spent * 100` | 49.08% return on investment     |
 | CTR (%)              | `Clicks / Impressions * 100`         | 0.01% — low user engagement     |
 | Total Clicks         | `SUM(clicks)`                        | 12,000 users clicked ads        |
@@ -119,7 +125,7 @@ Each KPI is calculated using DAX and visualized using Power BI card visuals:
 | Approved Conversions | `SUM(approved_conversion)`           | 585 final validated conversions |
 
 
-📈 Visualizations & Charts
+### 📈 Visualizations & Charts
 🎯 CTR (%) by Age Group
 Type: Clustered Bar Chart
 
@@ -132,7 +138,7 @@ Age 45–49 → Highest CTR (0.023%)
 Age 40–44 → Second Highest CTR (0.017%)
 
 
-🧍‍♂️ Total Spent by Gender
+###🧍‍♂️ Total Spent by Gender
 Type: Pie Chart
 
 Male: 87.51%
@@ -141,20 +147,20 @@ Female: 12.49%
 
 Suggests budget skewed heavily toward male audience
 
-📉 Impressions vs Clicks
+### 📉 Impressions vs Clicks
 Type: Line Chart
 
 Compares views (impressions) and engagements (clicks)
 
-Peak Campaign:
+### Peak Campaign:
 
 12.8M impressions, 1831 clicks, 97 approved conversions
 
-Low Campaign:
+### Low Campaign:
 
 730K impressions, 104 clicks, only 3 approved conversions
 
-📊 Campaign Performance vs CTR
+### 📊 Campaign Performance vs CTR
 Type: Combo Chart (Column + Line)
 
 Metrics per campaign_id:
@@ -163,9 +169,9 @@ CPC, CPA, CTR, conversions
 
 Example (campaign 1178):
 
-Spent: ₹16,577, CTR: 0.01%, Approved: 378
+Spent: 16,577, CTR: 0.01%, Approved: 378
 
-🔁 Funnel Chart
+### 🔁 Funnel Chart
 Clicks → Conversions → Approved Conversions
 
 Values:
@@ -178,7 +184,7 @@ Approved Conversions: 1K
 
 Shows performance drop-off across funnel
 
-📦 Top Ads by Engagement
+### 📦 Top Ads by Engagement
 Type: Tree Map
 
 Highlights top ad_id values by total clicks
@@ -188,7 +194,7 @@ ad_id 952031: 8 clicks
 ad_id 952001: 2 clicks
 
 
-🔎 Filters & Slicers Used
+### 🔎 Filters & Slicers Used
 Filter Type	Values Used
 Date Range	17–08–2017 to 30–08–2017
 Campaign ID	916, 936, 1178
@@ -197,22 +203,22 @@ Gender	M, F
 Total Conversion Slider	0 to 60
 Spent Slider	0 to 639.94
 
-📌 Final Campaign Insights
+### 📌 Final Campaign Insights
 Metric	Value
-Total Spent	₹20,000
+Total Spent	20,000
 CTR	0.01%
 ROI	49.08%
-Approved Conversions	585
+Approved Conversions 585
 
 
-📍 Best Campaign
+### 📍 Best Campaign
 Impressions: 12.8M
 
 Clicks: 1831
 
 Approved Conversions: 97
 
-📍 Low Campaign
+### 📍 Low Campaign
 Impressions: 730K
 
 Clicks: 104
@@ -220,7 +226,7 @@ Clicks: 104
 Approved Conversions: 3
 
 
-🧠 Recommendations for Next Campaign
+### 🧠 Recommendations for Next Campaign
 Focus on age groups 45–49 and 40–44 (highest CTR).
 
 Reduce ad spend on age groups with low engagement.
@@ -235,7 +241,7 @@ Monitor CTR, CPC, CPA metrics in real-time for optimization.
 
 
 
-👨‍💻 Tools & Skills Used
+### 👨‍💻 Tools & Skills Used
 Power BI Desktop
 
 DAX (Data Analysis Expressions)
