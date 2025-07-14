@@ -22,22 +22,28 @@ The insights will help the marketing team:
 ## 📂 Dataset Overview
 This dataset was provided as part of an internship task and includes the following fields:
 
-Column Name	Description
-ad_id	Unique ID of the advertisement
-reporting_start	Start date of campaign report
-reporting_end	End date of campaign report
-campaign_id	Unique ID assigned to the campaign
-fb_campaign_id	Facebook’s internal campaign ID
-age	Age group targeted (e.g., 30–34, 35–39, etc.)
-gender	Targeted gender (M or F)
-interest1	Primary interest category targeted (available up to row 762 only)
-interest2	Secondary interest category targeted (available up to row 762 only)
-interest3	Tertiary interest category targeted (available up to row 762 only)
-impressions	How many times the ad was shown
-clicks	Number of times users clicked the ad
-spent	Amount of money spent on that ad (₹ removed)
-total_conversion	Total number of conversions tracked
-approved_conversion	Approved conversions after quality validation
+C| Column Name            | Description                                        |
+|------------------------|----------------------------------------------------|
+| ad_id                | Unique ID of the advertisement                    |
+| reporting_start      | Start date of campaign report                     |
+| reporting_end        | End date of campaign report                       |
+| campaign_id          | Unique ID assigned to the campaign                |
+| fb_campaign_id       | Facebook’s internal campaign ID                   |
+| age                  | Age group targeted (e.g., 30–34, 35–39, etc.)     |
+| gender               | Targeted gender (M or F)                      |
+| impressions          | How many times the ad was shown                   |
+| clicks               | Number of times users clicked the ad              |
+| spent                | Amount of money spent on that ad (₹ removed)      |
+| total_conversion     | Total number of conversions tracked               |
+| approved_conversion  | Approved conversions after quality validation     |
+| interest1	           |Primary interest category targeted (available up to row 762 only)|
+|interest2	|Secondary interest category targeted (available up to row 762 only)|
+|interest3	|Tertiary interest category targeted (available up to row 762 only)|
+|impressions	|How many times the ad was shown|
+|clicks	|Number of times users clicked the ad|
+|spent	|Amount of money spent on that ad|
+|total_conversion |Total number of conversions tracked|
+|approved_conversion | Approved conversions after quality validation|
 
 
 ⚠️ Note:
