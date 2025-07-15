@@ -3,6 +3,12 @@ SOCIAL MEDIA CAMPAIGN PERFORMANCE TRACKER(PowerBI)
 
 # 📊 Social Media Campaign Performance Tracker
 
+
+
+Uploading task2video (1) (1).mp4…
+
+
+
 A detailed Power BI dashboard project analyzing the effectiveness and performance of **Facebook and Instagram ad campaigns**. This report uses **DAX measures**, **KPI cards**, and **interactive visuals** to uncover key trends, user behavior, and ROI performance over a specific timeframe.
 
 ---
