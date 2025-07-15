@@ -47,9 +47,31 @@ This dataset was provided as part of an internship task and includes the followi
 
 
 ⚠️ Note:
-The dataset originally included three interest-based targeting columns: interest1, interest2, and interest3. However, after row 762, the dataset was merged with additional external data that did not include values for these columns — resulting in extensive missing values beyond that point.
+### 🛠 **Challenges Faced**
 
-To maintain consistency and ensure clean data modeling, these columns were partially removed or excluded from analysis due to their incomplete and inconsistent nature after the merge.
+During the data exploration phase, I encountered a **data integrity issue** in the latter half of the dataset, specifically:
+
+- From **Row 762 onward**, columns appeared to be **misaligned or corrupted**.
+- The `campaign_id` column incorrectly contained **age values** like `30-34`, `35-39`, etc.
+- The `fb_campaign_id` column had **gender values** such as `M` or `F` instead of actual campaign identifiers.
+- The `age` column had **random numbers** like `23`, `5`, `85`, `155`, which are **not valid age categories**.
+- The `gender` column displayed numbers like `25`, `27`, `21`, indicating a **possible column shift**.
+- **Crucially**, both `total_conversion` and `approved_conversion` columns had **null values** across all 382 corrupted rows.
+
+> ✅ Verified via Power BI’s column quality bar:  
+> **76% valid rows**, **24% null**
+
+This corrupted segment would result in:
+- **Inaccurate metrics**
+- **Wrong aggregations**
+- **Misleading visuals**
+
+---
+
+✅ **Solution:**  
+I isolated and retained **only the first 761 clean rows** — which were complete, correctly formatted, and suitable for accurate analysis.  
+By doing this, I ensured the **quality** and **reliability** of insights derived from the dashboard.
+
 
 ---
 
