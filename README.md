@@ -29,7 +29,7 @@ This dataset was provided as part of an internship task and includes the followi
 | reporting_end        | End date of campaign report                       |
 | campaign_id          | Unique ID assigned to the campaign                |
 | fb_campaign_id       | Facebook’s internal campaign ID                   |
-| age                  | Age group targeted (e.g., 30–34, 35–39, etc.)     |
+| age                  | Age group targeted (e.g., 30–34, 35–39, 40-45,45-49.)     |
 | gender               | Targeted gender (M or F)                      |
 | impressions          | How many times the ad was shown                   |
 | clicks               | Number of times users clicked the ad              |
